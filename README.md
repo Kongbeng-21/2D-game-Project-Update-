@@ -1,61 +1,86 @@
-# 2D Side-Scroller Game (Unity)
+# Hero Knight: The Slime War
 
 ## Overview
-This project is a 2D side-scrolling game developed in Unity, focusing on character control, enemy behavior, and interactive game systems.
+This project is a 2D side-scrolling game developed in Unity.  
+It focuses on building a complete gameplay system including player movement, enemy behavior, interaction systems, and modular game architecture.
 
-The goal of this project is to build a complete gameplay system with smooth movement, responsive interaction, and modular design.
-
----
-
-## Features
-- Player movement with goal-based navigation
-- Enemy/character behavior using state-based logic (IDLE / MOVE)
-- Interactive click-to-move system using raycasting
-- Dynamic animation system with runtime UI controls
-- Moving platforms with velocity transfer
-- Elevator system with smooth motion using second-order dynamics
+The goal of this project is to design and implement a playable game with smooth mechanics and well-structured code using object-oriented programming.
 
 ---
 
-## System Design Highlights
+## Gameplay
 
-### State-Based Character Control
-- Implemented a state machine (IDLE, MOVE)
-- Handles movement using direction vectors and distance checks
-- Ensures smooth transitions between actions
+![Gameplay](gameplay1.png)
 
-### Input & Interaction System
-- Used raycasting to detect player clicks
-- Dynamically assign movement targets
-- Built UI panel to control animations in real-time
+![Gameplay](gameplay2.png)
 
-### Physics & Platform System
-- Moving platforms transfer velocity to player objects
-- Elevator system uses second-order dynamics for realistic motion
+---
+
+## Game System
+
+![Level Design](level.png)
+
+![Enemy Interaction](enemy.png)
+
+---
+
+## System Design
+
+This project is built using object-oriented programming principles.  
+The game logic is separated into modular components for better scalability and maintainability.
+
+Key systems include:
+
+- Player system with movement, attack, and state control  
+- Enemy system with behavior logic and interaction  
+- Level management system for handling progression  
+- Obstacle system for environmental interaction  
+
+---
+
+## OOP Design
+
+![OOP Diagram](diagram.png)
+
+The system design follows OOP principles such as:
+
+- Encapsulation for managing player and enemy states  
+- Inheritance for extending enemy types (e.g., slime, boss)  
+- Modularity to separate gameplay systems into independent components  
+
+---
+
+## Technical Highlights
+
+- Implemented a state-based system (IDLE, MOVE) for character behavior  
+- Designed click-to-move interaction using raycasting  
+- Built dynamic animation control system with runtime UI  
+- Developed moving platforms with velocity transfer  
+- Implemented elevator system with smooth motion using second-order dynamics  
 
 ---
 
 ## Challenges
 
-### 1. Movement & Collision Bugs
-- Issue: inconsistent movement and jitter
-- Solution: refactored movement logic and normalized direction vectors
+Movement and collision handling were challenging due to inconsistent behavior and jitter.  
+This was solved by refactoring the movement system and normalizing direction vectors.
 
-### 2. Animation Control Complexity
-- Issue: managing multiple animation states dynamically
-- Solution: built animation panel system to control states at runtime
+Managing animation states dynamically was also complex.  
+A custom animation panel system was implemented to control animation states at runtime.
 
 ---
 
 ## What I Learned
-- Object-oriented design in game systems
-- Physics-based movement and interaction
-- State machine implementation for character behavior
-- Debugging complex gameplay systems
+
+- Object-oriented programming in real game systems  
+- Game physics and movement handling  
+- Designing scalable and modular systems  
+- Debugging complex gameplay interactions  
 
 ---
 
 ## Future Improvements
-- AI-driven enemy behavior (adaptive difficulty)
-- Player behavior analysis for dynamic gameplay tuning
-- Pathfinding system (A* or navigation mesh)
+
+- Add AI-based enemy behavior and adaptive difficulty  
+- Implement pathfinding (e.g., A* algorithm)  
+- Improve game balancing and level design  
